@@ -121,7 +121,6 @@ function checkWinnerFor(player){
     ];
     for(let i in pos){
         let pArray = pos[i].split(",");
-        console.log(pArray)
         let resWon = pArray.every(option => board[option] === player);
         if(resWon){
             return true;
